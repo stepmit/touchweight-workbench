@@ -38,7 +38,11 @@ npm install
 npm run dev      # local preview, auto-reloads
 npm run build    # production build into dist/
 ```
-Deployment so far: Stephen dragged the built `dist/` contents onto **Netlify Drop** (app.netlify.com/drop) and added
+**Current deployment (since 2026-11-22): GitHub Pages** at https://stepmit.github.io/touchweight-workbench/ (public repo
+`stepmit/touchweight-workbench`; `reference/` is gitignored so his xlsx and the Gravagne PDF are never published).
+To publish an update: commit/push source to `main`, then run `./publish.sh` (builds and pushes `dist/` to the `gh-pages`
+branch). The `gh` CLI lives at `.tools/gh` (gitignored, not on PATH); it is logged in as `stepmit`.
+Earlier history: Stephen dragged the built `dist/` contents onto **Netlify Drop** (app.netlify.com/drop) and added
 it to his iPhone/iPad home screen. **Live-device testing of that deployment has not been confirmed yet** — ask him
 whether it worked. Why standalone: published Claude artifacts demanded a Claude login when launched from a home-screen
 icon, so a Claude-independent copy was the fix. Better long-term hosting (own Netlify account, or GitHub Pages) is an option.
